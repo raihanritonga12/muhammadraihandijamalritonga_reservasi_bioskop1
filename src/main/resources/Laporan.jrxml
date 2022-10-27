@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Laporan" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0406d1eb-eccc-4cd3-bddc-b45f198ce4cd">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <parameter name="id" class="java.lang.String"/>
+    <parameter name="nama" class="java.lang.String"/>
+    <parameter name="nama_film" class="java.lang.String"/>
+    <parameter name="harga" class="java.lang.String"/>
+    <parameter name="studio" class="java.lang.String"/>
+    <parameter name="kursi" class="java.lang.String"/>
+    <parameter name="jadwal" class="java.lang.String"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="80" splitType="Stretch">
+            <staticText>
+                <reportElement x="40" y="0" width="460" height="80" uuid="b8a9abd8-8b93-442f-9671-e2b9aac7a6de"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="26"/>
+                </textElement>
+                <text><![CDATA[Laporan]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="50">
+            <staticText>
+                <reportElement x="-11" y="0" width="40" height="40" uuid="3645ff90-5ee4-4fba-8c3f-0318dce194e7"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[id]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="-10" y="20" width="50" height="30" uuid="614dca63-63c7-4c2d-aa94-1cbc1c31ec2a"/>
+                <textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="60" y="0" width="50" height="40" uuid="06d81812-160e-407c-80dd-2edbb35bdb3b"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[nama]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement key="" x="60" y="20" width="50" height="30" uuid="8f304956-fde6-4b92-8793-a0f15552b804"/>
+                <textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="130" y="0" width="50" height="40" uuid="949adf42-5540-4e6c-8b81-5165effa72d3"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Nama Film]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="130" y="20" width="50" height="30" uuid="be19dcb1-0dc8-452c-890c-f042d8f2f9f8"/>
+                <textFieldExpression><![CDATA[$P{nama_film}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="200" y="0" width="50" height="40" uuid="ca12420e-2fd1-49b6-8b90-93ed65820a89"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Harga]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="200" y="20" width="50" height="30" uuid="f0a7c611-5cc6-4d0e-8c18-09f43b788c5b"/>
+                <textFieldExpression><![CDATA[$P{harga}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="270" y="0" width="50" height="40" uuid="d38d6fbb-d07e-493b-b5e1-d78293ef1c64"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Studio]]></text>
+            </staticText>
+            <textField>
+                <reportElement isPrintRepeatedValues="false" x="270" y="20" width="50" height="30" uuid="96ebcc67-6649-4f50-a84e-baf0c251c5fa"/>
+                <textFieldExpression><![CDATA[$P{studio}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="340" y="0" width="50" height="40" uuid="c2e34994-348d-4771-9300-e84f09b86991"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Kursi]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="340" y="20" width="50" height="30" uuid="7fc8afb8-6ab6-4a4b-93b8-0db53c83e0f5"/>
+                <textFieldExpression><![CDATA[$P{kursi}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="410" y="0" width="50" height="40" uuid="b627d909-05a2-41b9-bb14-a167a1a3fbfe"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Jadwal]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="410" y="20" width="50" height="30" uuid="4ceca8a5-18ec-4dca-9411-ed725ad4a0d8"/>
+                <textFieldExpression><![CDATA[$P{jadwal}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="80" splitType="Stretch"/>
+    </columnHeader>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
