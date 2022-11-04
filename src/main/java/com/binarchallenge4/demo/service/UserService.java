@@ -9,8 +9,6 @@ public interface UserService {
     List<UserEntity> CariSemuaUser();
     Optional<UserEntity> CariDariID(Long id);
     UserEntity SimpanUser(UserEntity UserEntity);
-
-
     UserEntity updateUser(Long id, UserEntity UserEntity);
     String deleteUser(Long id);
 

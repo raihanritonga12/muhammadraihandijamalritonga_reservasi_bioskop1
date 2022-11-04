@@ -11,7 +11,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@Table(name= "nt_Reservation")
+@Table(name= "reservation")
 public class ReservesEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,5 +25,4 @@ public class ReservesEntity {
     private String jadwal_id;
     @Column(name = "cinema_id")
     private String cinema_id;
-
 }
